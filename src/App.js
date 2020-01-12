@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
+import PageTeam from './PageTeam';
 
 const App = () => {
   return (
-    <div>
-    </div>
+    <PageTeam />
   );
 }
 

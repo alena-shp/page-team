@@ -1,26 +1,35 @@
 import React from "react"
 import "./PageTeam.scss"
+import videoImg from "./assets/videoImg.jpg"
 
 const PageTeam = () => {
   return (
     <div className="pageTeam">
       <div className="header">
         <div className="inner">
-          <div className="header__menu">
-            <a href="#0">HOME</a>
-            <a href="#0">PORTFOLIO</a>
-            <a href="#0">ABOUT US</a>
-            <a href="#0">CONTACT</a>
+          <div className="header-menu">
+            <a className="header-menu__link active" href="#0">HOME</a>
+            <a className="header-menu__link" href="#0">PORTFOLIO</a>
+            <a className="header-menu__link" href="#0">ABOUT US</a>
+            <a className="header-menu__link" href="#0">CONTACT</a>
           </div>
-          <div className="header__content">
-            <div className="header__text">
-              <h1>Our strong organaisation</h1>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed d
-              </h3>
-            </div>
-            <div className="header__video">
-              <img src="" alt="" />
+          <div className="header-content">
+            <div className="header-content__wrapper">
+              <div className="header-content__greetings">
+                <h1>Our strong organaisation</h1>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h3>
+                <a href="#0">Contact Us</a>
+              </div>
+              <div className="header-content__video">
+                <img
+                  src={videoImg}
+                  alt=""
+                  style={{ height: "100%", width: "100%" }}
+                />
+              </div>
             </div>
           </div>
         </div>
