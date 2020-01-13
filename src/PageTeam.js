@@ -211,10 +211,10 @@ const PageTeam = () => {
         <h1 className="subscription__title">Design tips, tricks, and freebies. Delivered weekly.</h1>
         <h3 className="subscription__subtitle">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur
+          dolore eu fugiat nulla pariatur.
         </h3>
         <div className="subscription__form">
-          <input className="subscription__form-input" />
+          <input className="subscription__form-input" placeholder="Email" />
           <button className="subscription__form-button">Subscribe</button>
         </div>
         </div>
@@ -224,7 +224,7 @@ const PageTeam = () => {
         <h1 className="communication__title">Get in touch</h1>
         <h3 className="communication__subtitle">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
+          dolore eu fugiat nulla pariatur
         </h3>
         <div className="communication__form">
           <div className="communication__form-data">
