@@ -1,6 +1,10 @@
 import React from "react"
 import "./PageTeam.scss"
 import videoImg from "./assets/videoImg.jpg"
+import  settingsImg from "./assets/settingsImg.png"
+import diamondImg from "./assets/diamondImg.png"
+import pencilImg from "./assets/pencilImg.png"
+import truckImg from "./assets/truckImg.png"
 
 const PageTeam = () => {
   return (
@@ -8,10 +12,18 @@ const PageTeam = () => {
       <div className="header">
         <div className="inner">
           <div className="header-menu">
-            <a className="header-menu__link active" href="#0">HOME</a>
-            <a className="header-menu__link" href="#0">PORTFOLIO</a>
-            <a className="header-menu__link" href="#0">ABOUT US</a>
-            <a className="header-menu__link" href="#0">CONTACT</a>
+            <a className="header-menu__link active" href="#0">
+              HOME
+            </a>
+            <a className="header-menu__link" href="#0">
+              PORTFOLIO
+            </a>
+            <a className="header-menu__link" href="#0">
+              ABOUT US
+            </a>
+            <a className="header-menu__link" href="#0">
+              CONTACT
+            </a>
           </div>
           <div className="header-content">
             <div className="header-content__wrapper">
@@ -36,61 +48,63 @@ const PageTeam = () => {
       </div>
 
       <div className="offer">
-        <div className="offer-description">
-          <h1 className="offer-description__title">
-            Do you know we can provide for you ?
-          </h1>
-          <h3 className="offer-description__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
-          </h3>
-          <button className="offer-description__button">Learn More</button>
-        </div>
-        <div className="offer__functions">
-          <div className="offer-function">
-            <img className="offer-function__icon" src="" alt="" />
-            <h1 className="offer-function__title" src="" alt="">
-              Management
+        <div className="inner">
+          <div className="offer-description">
+            <h1 className="offer-description__title">
+              Do you know we can provide for you ?
             </h1>
-            <p className="offer-function__text">
+            <h3 className="offer-description__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi
+            </h3>
+            <button className="offer-description__button">Learn More</button>
           </div>
+          <div className="offer__functions">
+            <div className="offer-function">
+              <img className="offer-function__icon" src={settingsImg} alt="" />
+              <h1 className="offer-function__title">
+                Management
+              </h1>
+              <p className="offer-function__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
 
-          <div className="offer-function">
-            <img className="offer-function__icon" src="" alt="" />
-            <h1 className="offer-function__title" src="" alt="">
-              Logo/Branding
-            </h1>
-            <p className="offer-function__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
-          </div>
+            <div className="offer-function">
+              <img className="offer-function__icon" src={pencilImg} alt="" />
+              <h1 className="offer-function__title">
+                Logo/Branding
+              </h1>
+              <p className="offer-function__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
 
-          <div className="offer-function">
-            <img className="offer-function__icon" src="" alt="" />
-            <h1 className="offer-function__title" src="" alt="">
-              UI /UX Design
-            </h1>
-            <p className="offer-function__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
-          </div>
+            <div className="offer-function">
+              <img className="offer-function__icon" src={diamondImg} alt="" />
+              <h1 className="offer-function__title">
+                UI /UX Design
+              </h1>
+              <p className="offer-function__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
 
-          <div className="offer-function">
-            <img className="offer-function__icon" src="" alt="" />
-            <h1 className="offer-function__title" src="" alt="">
-              Animation
-            </h1>
-            <p className="offer-function__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+            <div className="offer-function">
+              <img className="offer-function__icon" src={truckImg} alt="" />
+              <h1 className="offer-function__title">
+                Animation
+              </h1>
+              <p className="offer-function__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
           </div>
         </div>
       </div>
