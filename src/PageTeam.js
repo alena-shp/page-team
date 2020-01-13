@@ -4,6 +4,7 @@ import videoImg from "./assets/videoImg.jpg"
 import settingsImg from "./assets/settingsImg.png"
 import diamondImg from "./assets/diamondImg.png"
 import pencilImg from "./assets/pencilImg.png"
+import personImg from "./assets/personImg.png"
 import truckImg from "./assets/truckImg.png"
 
 const PageTeam = () => {
@@ -107,14 +108,26 @@ const PageTeam = () => {
           <h3 className="products__subtitle">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur
+            <hr />
           </h3>
-          <hr />
           <ul className="products__menu">
-            <li><a className="active" href="#0">All</a></li>
-            <li><a href="#0">Print template</a></li>
-            <li><a href="#0">Web template</a></li>
-            <li><a href="#0">User interface</a></li>
-            <li><a href="#0">Mock-up</a></li>
+            <li>
+              <a className="active" href="#0">
+                All
+              </a>
+            </li>
+            <li>
+              <a href="#0">Print template</a>
+            </li>
+            <li>
+              <a href="#0">Web template</a>
+            </li>
+            <li>
+              <a href="#0">User interface</a>
+            </li>
+            <li>
+              <a href="#0">Mock-up</a>
+            </li>
           </ul>
           <div className="products__img">
             <img src="https://picsum.photos/id/1/280/280" alt="" />
@@ -130,31 +143,63 @@ const PageTeam = () => {
       </div>
 
       <div className="team">
-        <h1 className="team__title">Meet our team</h1>
-        <h3 className="team__subtitle">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
-        </h3>
-        <div className="team__people">
-          <div className="team__person">
-            <img src="" alt="" />
-          </div>
-          <div className="team-details">
-            <h1 className="team-details__name">Meet our team</h1>
-            <h3 className="team-details__about">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </h3>
-            <div className="team-details__social">
-              <a href="#0">Facebook</a>
-              <a href="#0">Dribble</a>
-              <a href="#0">Behance</a>
-              <a href="#0">Twiter</a>
+        <div className="inner">
+          <h1 className="team__title">Meet our team</h1>
+          <h3 className="team__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam
+            <hr />
+          </h3>
+          <div className="team__people">
+            <div className="team__person">
+              <img
+                src={personImg}
+                alt=""
+                style={{ width: "360px", height: "460px" }}
+              />
             </div>
-            <div className="team-details__img">
-              <div>
-                <img className="team-details__img-photo" src="" alt="" />
-                <span className="team-details__img-name">Sokina Jue</span>
+            <div className="team-details">
+              <h1 className="team-details__name">Mark waugh</h1>
+              <p className="team-details__about">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div className="team-details__social">
+                <a href="#0">Facebook</a>
+                <a href="#0">Dribble</a>
+                <a href="#0">Behance</a>
+                <a href="#0">Twiter</a>
+              </div>
+              <div className="team-details__img">
+                <div className="team-details__img-photo">
+                  <img src="https://picsum.photos/id/11/180/200" alt="" />
+                  <a href="0#" className="team-details__img-name">Sokina Jue</a>
+                </div>
+                <div className="team-details__img-photo">
+                  <img
+                    className="team-details__img-photo"
+                    src="https://picsum.photos/id/12/180/200"
+                    alt=""
+                  />
+                  <a href="0#" className="team-details__img-name">Sokina Jue</a>
+                </div>
+                <div className="team-details__img-photo">
+                  <img
+                    className="team-details__img-photo"
+                    src="https://picsum.photos/id/13/180/200"
+                    alt=""
+                  />
+                  <a href="0#" className="team-details__img-name">Sokina Jue</a>
+                </div>
+                <div className="team-details__img-photo">
+                  <img
+                    className="team-details__img-photo"
+                    src="https://picsum.photos/id/14/180/200"
+                    alt=""
+                  />
+                  <a href="0#" className="team-details__img-name">Sokina Jue</a>
+                </div>
               </div>
             </div>
           </div>
@@ -162,14 +207,16 @@ const PageTeam = () => {
       </div>
 
       <div className="subscription">
-        <h1 className="subscription__title">Meet our team</h1>
+      <div className="inner">
+        <h1 className="subscription__title">Design tips, tricks, and freebies. Delivered weekly.</h1>
         <h3 className="subscription__subtitle">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
+          dolore eu fugiat nulla pariatur
         </h3>
         <div className="subscription__form">
           <input className="subscription__form-input" />
-          <button className="subscription__form-input">Subscribe</button>
+          <button className="subscription__form-button">Subscribe</button>
+        </div>
         </div>
       </div>
 
