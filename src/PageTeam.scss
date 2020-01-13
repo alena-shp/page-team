@@ -138,10 +138,10 @@ body {
 
     &__title {
       font-size: 42px;
-        line-height: 55px;
-        color: $color-black;
-        margin-bottom: 50px;
-        text-transform: uppercase;
+      line-height: 55px;
+      color: $color-black;
+      margin-bottom: 50px;
+      text-transform: uppercase;
     }
     &__text {
       font-size: 16px;
@@ -153,17 +153,16 @@ body {
     &__button {
       @include font-metrophobic;
 
-        background: $color-white;
-        border: 2px solid $color-red;
-        border-radius: 5px;
-        color: $color-red;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 18px;
-        margin: 0;
-        outline: none;
-        padding: 16px 60px;
-
+      background: $color-white;
+      border: 2px solid $color-red;
+      border-radius: 5px;
+      color: $color-red;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 18px;
+      margin: 0;
+      outline: none;
+      padding: 16px 60px;
     }
   }
 
@@ -192,14 +191,12 @@ body {
       font-size: 24px;
       color: $color-grey;
       margin-bottom: 20px;
-
     }
     &__text {
       font-size: 16px;
       line-height: 24px;
       color: $color-light-grey;
       margin-bottom: 40px;
-
     }
   }
 }
@@ -207,6 +204,78 @@ body {
 // === / offer ===
 
 // === products ===
+.products {
+  padding-bottom: 110px;
+  .inner {
+    display: flex;
+    border-top: 2px solid #cccccc;
+    padding-top: 110px;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-size: 42px;
+    color: $color-black;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-light-grey;
+    font-weight: normal;
+    width: 45%;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  hr {
+    border: none;
+    background-color: $color-red;
+    color: $color-red;
+    height: 2px;
+    width: 140px;
+    margin-bottom: 80px;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 68px;
+    li {
+      & + li {
+        margin-left: 40px;
+      }
+      a {
+        @include font-metrophobic;
+
+        font-size: 22px;
+        line-height: 24px;
+        color: $color-light-grey;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 400;
+
+        &.active,
+        &:hover {
+          color: $color-red;
+        }
+      }
+    }
+  }
+
+  &__img {
+    img:not(:last-child) {
+      margin-right: 20px;
+    }
+    img:nth-child(4) {
+      margin-right: 0px;
+    }
+    img:nth-child(-n + 4) {
+      margin-bottom: 20px;
+    }
+  }
+}
 // === / products ===
 
 // === team ===

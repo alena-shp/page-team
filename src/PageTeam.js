@@ -1,7 +1,7 @@
 import React from "react"
 import "./PageTeam.scss"
 import videoImg from "./assets/videoImg.jpg"
-import  settingsImg from "./assets/settingsImg.png"
+import settingsImg from "./assets/settingsImg.png"
 import diamondImg from "./assets/diamondImg.png"
 import pencilImg from "./assets/pencilImg.png"
 import truckImg from "./assets/truckImg.png"
@@ -64,9 +64,7 @@ const PageTeam = () => {
           <div className="offer__functions">
             <div className="offer-function">
               <img className="offer-function__icon" src={settingsImg} alt="" />
-              <h1 className="offer-function__title">
-                Management
-              </h1>
+              <h1 className="offer-function__title">Management</h1>
               <p className="offer-function__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -75,9 +73,7 @@ const PageTeam = () => {
 
             <div className="offer-function">
               <img className="offer-function__icon" src={pencilImg} alt="" />
-              <h1 className="offer-function__title">
-                Logo/Branding
-              </h1>
+              <h1 className="offer-function__title">Logo/Branding</h1>
               <p className="offer-function__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -86,9 +82,7 @@ const PageTeam = () => {
 
             <div className="offer-function">
               <img className="offer-function__icon" src={diamondImg} alt="" />
-              <h1 className="offer-function__title">
-                UI /UX Design
-              </h1>
+              <h1 className="offer-function__title">UI /UX Design</h1>
               <p className="offer-function__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -97,9 +91,7 @@ const PageTeam = () => {
 
             <div className="offer-function">
               <img className="offer-function__icon" src={truckImg} alt="" />
-              <h1 className="offer-function__title">
-                Animation
-              </h1>
+              <h1 className="offer-function__title">Animation</h1>
               <p className="offer-function__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -110,26 +102,30 @@ const PageTeam = () => {
       </div>
 
       <div className="products">
-        <h1 className="products__title">Feature products</h1>
-        <h3 className="products__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </h3>
-        <div className="products__menu">
-          <a href="#0">ALL</a>
-          <a href="#0">Print template</a>
-          <a href="#0">Web template</a>
-          <a href="#0">User interface</a>
-          <a href="#0">Mock-up</a>
-        </div>
-        <div className="products__img">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <div className="inner">
+          <h1 className="products__title">Feature products</h1>
+          <h3 className="products__subtitle">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur
+          </h3>
+          <hr />
+          <ul className="products__menu">
+            <li><a className="active" href="#0">All</a></li>
+            <li><a href="#0">Print template</a></li>
+            <li><a href="#0">Web template</a></li>
+            <li><a href="#0">User interface</a></li>
+            <li><a href="#0">Mock-up</a></li>
+          </ul>
+          <div className="products__img">
+            <img src="https://picsum.photos/id/1/280/280" alt="" />
+            <img src="https://picsum.photos/id/160/280/280" alt="" />
+            <img src="https://picsum.photos/id/366/280/280" alt="" />
+            <img src="https://picsum.photos/id/180/280/280" alt="" />
+            <img src="https://picsum.photos/id/119/280/280" alt="" />
+            <img src="https://picsum.photos/id/367/280/280" alt="" />
+            <img src="https://picsum.photos/id/357/280/280" alt="" />
+            <img src="https://picsum.photos/id/0/280/280" alt="" />
+          </div>
         </div>
       </div>
 
