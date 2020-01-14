@@ -11,11 +11,11 @@
 
 // === variables ===
 $color-white: #ffffff;
-$color-pale-pink: #f6f2f2;
+$color-pale-pink: #fff0f0;
 $color-black: #000000;
 $color-grey: #333333;
-$color-light-grey: #4c4c4c;
-$color-red: #d64a4a;
+$color-light-grey: grey;
+$color-red: #ff3b3b;
 // === / variables ===
 
 // === common ===
@@ -384,21 +384,24 @@ hr {
 .subscription {
   padding-top: 110px;
   padding-bottom: 110px;
-  background: $color-red;
-  color: $color-white;
+  background: $color-pale-pink;
+  color: $color-light-grey;
   text-align: center;
 
   &__title {
-    @include font-metrophobic;
+    
     font-size: 42px;
     margin-bottom: 40px;
+    color: $color-grey;
   }
   &__subtitle {
-    font-size: 16px;
-    line-height: 24px;
+    
+    font-size: 18px;
+    line-height: 28px;
     font-weight: normal;
-    width: 50%;
+    width: 60%;
     margin: 0 auto 70px;
+    
   }
 
   &__form {
@@ -407,7 +410,7 @@ hr {
 
     &-input {
       flex-basis: 520px;
-      border: none;
+      border: 1px solid #e5e5e5;
       border-radius: 5px;
       background-color: $color-white;
       color: $color-black;
@@ -420,9 +423,9 @@ hr {
         color: $color-light-grey;
       }
     }
-  
-  &-button {
-      border: 2px solid $color-white;
+
+    &-button {
+      border: none;
       border-radius: 5px;
       background-color: $color-red;
       color: $color-white;
@@ -431,13 +434,125 @@ hr {
       padding: 24px 58px;
       font-weight: 700;
       text-transform: uppercase;
-
+    }
   }
-}
 }
 // === / subscription ===
 
 // === communication ===
+.communication {
+  display: flex;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  flex-direction: column;
+  margin-left: 100px;
+
+  &__title {
+    font-size: 42px;
+    color: $color-black;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-light-grey;
+    font-weight: normal;
+    width: 45%;
+    margin-bottom: 74px;
+    hr {
+      margin: 50px 0 0;
+    }
+  }
+  &__main {
+    display: flex;
+  }
+  &__form {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 110px;
+
+    &-data {
+      display: flex;
+      input {
+        width: 100%;
+        background-color: #e5e5e5;
+        border: none;
+        border-radius: 5px;
+        color: $color-black;
+        font-size: 16px;
+        outline: none;
+        padding: 24px;
+        margin-bottom: 44px;
+        & + input {
+          margin-left: 20px;
+        }
+      }
+    }
+    &-message {
+      display: flex;
+      flex-direction: column;
+      textarea {
+        border: none;
+        border-radius: 5px;
+        color: $color-black;
+        font-size: 16px;
+        padding: 30px;
+        height: 240px;
+        outline: none;
+        resize: none;
+        background-color: #e5e5e5;
+        margin-bottom: 44px;
+      }
+
+      button {
+        @include font-metrophobic;
+
+        background: $color-red;
+        border: none;
+        border-radius: 5px;
+        color: $color-white;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0;
+        outline: none;
+        text-decoration: none;
+        padding: 16px 60px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__contact {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $color-grey;
+    color: $color-white;
+    padding-left: 76px;
+
+    &-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $color-white;
+      margin-bottom: 36px;
+    }
+    &-address,
+    &-email,
+    &-phone {
+      font-size: 16px;
+      line-height: 28px;
+      color: $color-white;
+      margin-bottom: 26px;
+    }
+
+    &-address {
+      width: 80%;
+    }
+  }
+}
 // === / communication ===
 
 // === footer ===

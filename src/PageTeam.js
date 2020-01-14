@@ -6,6 +6,10 @@ import diamondImg from "./assets/diamondImg.png"
 import pencilImg from "./assets/pencilImg.png"
 import personImg from "./assets/personImg.png"
 import truckImg from "./assets/truckImg.png"
+import inImg from "./assets/inImg.png"
+import facebookImg from "./assets/facebookImg.png"
+import twitterImg from "./assets/twitterImg.png"
+import googleImg from "./assets/googleImg.png"
 
 const PageTeam = () => {
   return (
@@ -174,7 +178,9 @@ const PageTeam = () => {
               <div className="team-details__img">
                 <div className="team-details__img-photo">
                   <img src="https://picsum.photos/id/11/180/200" alt="" />
-                  <a href="0#" className="team-details__img-name">Sokina Jue</a>
+                  <a href="0#" className="team-details__img-name">
+                    Sokina Jue
+                  </a>
                 </div>
                 <div className="team-details__img-photo">
                   <img
@@ -182,7 +188,9 @@ const PageTeam = () => {
                     src="https://picsum.photos/id/12/180/200"
                     alt=""
                   />
-                  <a href="0#" className="team-details__img-name">Sokina Jue</a>
+                  <a href="0#" className="team-details__img-name">
+                    Sokina Jue
+                  </a>
                 </div>
                 <div className="team-details__img-photo">
                   <img
@@ -190,7 +198,9 @@ const PageTeam = () => {
                     src="https://picsum.photos/id/13/180/200"
                     alt=""
                   />
-                  <a href="0#" className="team-details__img-name">Sokina Jue</a>
+                  <a href="0#" className="team-details__img-name">
+                    Sokina Jue
+                  </a>
                 </div>
                 <div className="team-details__img-photo">
                   <img
@@ -198,7 +208,9 @@ const PageTeam = () => {
                     src="https://picsum.photos/id/14/180/200"
                     alt=""
                   />
-                  <a href="0#" className="team-details__img-name">Sokina Jue</a>
+                  <a href="0#" className="team-details__img-name">
+                    Sokina Jue
+                  </a>
                 </div>
               </div>
             </div>
@@ -207,16 +219,18 @@ const PageTeam = () => {
       </div>
 
       <div className="subscription">
-      <div className="inner">
-        <h1 className="subscription__title">Design tips, tricks, and freebies. Delivered weekly.</h1>
-        <h3 className="subscription__subtitle">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
-        </h3>
-        <div className="subscription__form">
-          <input className="subscription__form-input" placeholder="Email" />
-          <button className="subscription__form-button">Subscribe</button>
-        </div>
+        <div className="inner">
+          <h1 className="subscription__title">
+            Design tips, tricks, and freebies. Delivered weekly
+          </h1>
+          <h3 className="subscription__subtitle">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur
+          </h3>
+          <div className="subscription__form">
+            <input className="subscription__form-input" placeholder="Email" />
+            <button className="subscription__form-button">Subscribe</button>
+          </div>
         </div>
       </div>
 
@@ -225,28 +239,31 @@ const PageTeam = () => {
         <h3 className="communication__subtitle">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur
+          <hr />
         </h3>
-        <div className="communication__form">
-          <div className="communication__form-data">
-            <input />
-            <input />
+        <div className="communication__main">
+          <div className="communication__form">
+            <div className="communication__form-data">
+              <input />
+              <input />
+            </div>
+            <div className="communication__form-message">
+              <textarea type="text" placeholder="Type your message" />
+              <button>Send Message</button>
+            </div>
           </div>
-          <div className="communication__form-message">
-            <input />
-            <button>Send message</button>
+          <div className="communication__contact">
+            <h3 className="communication__contact-title">contact info</h3>
+            <span className="communication__contact-address">
+              Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh
+            </span>
+            <span className="communication__contact-email">
+              redwan@deviserweb.com
+            </span>
+            <span className="communication__contact-phone">
+              (+88) 017 617 46373
+            </span>
           </div>
-        </div>
-        <div className="communication__contact">
-          <h3 className="communication__contact-title">contact info</h3>
-          <span className="communication__contact-address">
-            Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh
-          </span>
-          <span className="communication__contact-email">
-            redwan@deviserweb.com
-          </span>
-          <span className="communication__contact-phone">
-            (+88) 017 617 46373
-          </span>
         </div>
       </div>
 
@@ -255,10 +272,10 @@ const PageTeam = () => {
           © Copyright @Junaed 2016, All rights reserved.
         </p>
         <div className="footer__social">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src={inImg} alt="" />
+          <img src={twitterImg} alt="" />
+          <img src={facebookImg} alt="" />
+          <img src={googleImg} alt="" />
         </div>
       </div>
     </div>
