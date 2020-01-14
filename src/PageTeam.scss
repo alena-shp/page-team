@@ -118,7 +118,7 @@ hr {
         @include font-metrophobic;
 
         background: $color-red;
-        border: none;
+        border: 2px solid $color-red;
         border-radius: 5px;
         color: $color-white;
         cursor: pointer;
@@ -128,6 +128,12 @@ hr {
         outline: none;
         text-decoration: none;
         padding: 16px 60px;
+
+        &:hover {
+          background: $color-white;
+          border: 2px solid $color-red;
+          color: $color-red;
+        }
       }
     }
   }
@@ -389,19 +395,16 @@ hr {
   text-align: center;
 
   &__title {
-    
     font-size: 42px;
     margin-bottom: 40px;
     color: $color-grey;
   }
   &__subtitle {
-    
     font-size: 18px;
     line-height: 28px;
     font-weight: normal;
     width: 60%;
     margin: 0 auto 70px;
-    
   }
 
   &__form {
@@ -556,4 +559,30 @@ hr {
 // === / communication ===
 
 // === footer ===
+.footer {
+  background-color: $color-grey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__copyright {
+    font-size: 16px;
+    color: $color-white;
+  }
+  &__social {
+    img {
+      width: 32px;
+      height: 32px;
+
+      & + img {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
 // === / footer ===

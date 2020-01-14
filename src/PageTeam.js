@@ -244,8 +244,8 @@ const PageTeam = () => {
         <div className="communication__main">
           <div className="communication__form">
             <div className="communication__form-data">
-              <input />
-              <input />
+              <input type="text" placeholder="Name"/>
+              <input type="text" placeholder="Email"/>
             </div>
             <div className="communication__form-message">
               <textarea type="text" placeholder="Type your message" />
@@ -268,14 +268,16 @@ const PageTeam = () => {
       </div>
 
       <div className="footer">
-        <p className="footer__copyright">
-          © Copyright @Junaed 2016, All rights reserved.
-        </p>
-        <div className="footer__social">
-          <img src={inImg} alt="" />
-          <img src={twitterImg} alt="" />
-          <img src={facebookImg} alt="" />
-          <img src={googleImg} alt="" />
+        <div className="inner">
+          <p className="footer__copyright">
+            © Copyright @Junaed 2016, All rights reserved
+          </p>
+          <div className="footer__social">
+            <img src={inImg} alt="" />
+            <img src={twitterImg} alt="" />
+            <img src={facebookImg} alt="" />
+            <img src={googleImg} alt="" />
+          </div>
         </div>
       </div>
     </div>
