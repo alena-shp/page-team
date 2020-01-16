@@ -38,7 +38,9 @@ const PageTeam = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </h3>
-                <a href="#0">Contact Us</a>
+                <a className="btn-primary" href="#0">
+                  Contact Us
+                </a>
               </div>
               <div className="header-content__video">
                 <img
@@ -64,7 +66,7 @@ const PageTeam = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi
             </h3>
-            <button className="offer-description__button">Learn More</button>
+            <button className="btn-secondary">Learn More</button>
           </div>
           <div className="offer__functions">
             <div className="offer-function">
@@ -229,7 +231,7 @@ const PageTeam = () => {
           </h3>
           <div className="subscription__form">
             <input className="subscription__form-input" placeholder="Email" />
-            <button className="subscription__form-button">Subscribe</button>
+            <button className="btn-primary">Subscribe</button>
           </div>
         </div>
       </div>
@@ -244,12 +246,12 @@ const PageTeam = () => {
         <div className="communication__main">
           <div className="communication__form">
             <div className="communication__form-data">
-              <input type="text" placeholder="Name"/>
-              <input type="text" placeholder="Email"/>
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email" />
             </div>
             <div className="communication__form-message">
               <textarea type="text" placeholder="Type your message" />
-              <button>Send Message</button>
+              <button className="btn-primary">Send Message</button>
             </div>
           </div>
           <div className="communication__contact">

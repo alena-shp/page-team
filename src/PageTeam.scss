@@ -31,13 +31,50 @@ body {
   width: 1180px;
 }
 
+@mixin btn-main {
+  @include font-metrophobic;
+
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0;
+  outline: none;
+  padding: 16px 60px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  @include btn-main;
+  background: $color-red;
+  border: 2px solid $color-red;
+  color: $color-white;
+
+  &:hover {
+    background: $color-white;
+    border: 2px solid $color-red;
+    color: $color-red;
+  }
+}
+
+.btn-secondary {
+  @include btn-main;
+
+  background: $color-white;
+  border: 2px solid $color-red;
+  color: $color-red;
+
+  &:hover {
+    background: $color-pale-pink;
+  }
+}
+
 hr {
-  border: none;
   background-color: $color-red;
+  border: none;
   color: $color-red;
   height: 2px;
-  width: 140px;
   margin-top: 30px;
+  width: 140px;
 }
 // === / common ===
 
@@ -53,17 +90,17 @@ hr {
   }
 
   &-menu {
-    flex-shrink: 1;
-    padding: 36px;
     background-color: $color-grey;
-    width: 100%;
-    text-align: center;
+    flex-shrink: 1;
     margin-top: 30px;
+    padding: 36px;
+    text-align: center;
+    width: 100%;
 
     &__link {
       color: $color-white;
-      text-decoration: none;
       padding: 0 34px;
+      text-decoration: none;
       transition: 0.2s;
 
       &.active {
@@ -84,9 +121,9 @@ hr {
     flex-grow: 1;
 
     &__wrapper {
-      margin: 0 auto;
       flex-direction: row;
       display: flex;
+      margin: 0 auto;
     }
 
     &__greetings,
@@ -98,42 +135,20 @@ hr {
       padding-right: 110px;
 
       h1 {
-        font-size: 60px;
-        line-height: 72px;
         color: $color-black;
+        font-size: 60px;
         font-weight: bold;
-        text-transform: uppercase;
+        line-height: 72px;
         margin-bottom: 32px;
+        text-transform: uppercase;
       }
 
       h3 {
-        font-size: 16px;
-        line-height: 28px;
         color: $color-light-grey;
-        width: 90%;
+        font-size: 16px;
         margin-bottom: 54px;
-      }
-
-      a {
-        @include font-metrophobic;
-
-        background: $color-red;
-        border: 2px solid $color-red;
-        border-radius: 5px;
-        color: $color-white;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 18px;
-        margin: 0;
-        outline: none;
-        text-decoration: none;
-        padding: 16px 60px;
-
-        &:hover {
-          background: $color-white;
-          border: 2px solid $color-red;
-          color: $color-red;
-        }
+        line-height: 28px;
+        width: 90%;
       }
     }
   }
@@ -152,32 +167,17 @@ hr {
     padding-right: 130px;
 
     &__title {
-      font-size: 42px;
-      line-height: 55px;
       color: $color-black;
+      font-size: 42px;
       margin-bottom: 50px;
+      line-height: 55px;
       text-transform: uppercase;
     }
     &__text {
-      font-size: 16px;
-      line-height: 26px;
       color: $color-light-grey;
+      font-size: 16px;
       margin-bottom: 56px;
-    }
-
-    &__button {
-      @include font-metrophobic;
-
-      background: $color-white;
-      border: 2px solid $color-red;
-      border-radius: 5px;
-      color: $color-red;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 18px;
-      margin: 0;
-      outline: none;
-      padding: 16px 60px;
+      line-height: 26px;
     }
   }
 
@@ -203,15 +203,17 @@ hr {
     }
 
     &__title {
-      font-size: 24px;
       color: $color-grey;
+      font-size: 24px;
       margin-bottom: 20px;
     }
     &__text {
-      font-size: 16px;
-      line-height: 24px;
+      @include font-metrophobic;
+
       color: $color-light-grey;
+      font-size: 16px;
       margin-bottom: 40px;
+      line-height: 24px;
     }
   }
 }
@@ -221,33 +223,33 @@ hr {
 // === products ===
 .products {
   .inner {
-    display: flex;
-    border-top: 2px solid #cccccc;
-    padding-top: 110px;
-    flex-direction: column;
     align-items: center;
+    border-top: 2px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
   }
   &__title {
-    font-size: 42px;
     color: $color-black;
+    font-size: 42px;
     margin-bottom: 36px;
     text-transform: uppercase;
   }
   &__subtitle {
-    font-size: 16px;
-    line-height: 28px;
     color: $color-light-grey;
+    font-size: 16px;
     font-weight: normal;
-    width: 45%;
-    text-align: center;
+    line-height: 28px;
     margin: 0 auto 80px;
+    text-align: center;
+    width: 45%;
   }
 
   &__menu {
-    display: flex;
     align-items: center;
-    list-style: none;
+    display: flex;
     margin-bottom: 68px;
+    list-style: none;
     li {
       & + li {
         margin-left: 40px;
@@ -255,12 +257,12 @@ hr {
       a {
         @include font-metrophobic;
 
-        font-size: 22px;
-        line-height: 24px;
         color: $color-light-grey;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
         text-transform: uppercase;
         text-decoration: none;
-        font-weight: 400;
 
         &.active,
         &:hover {
@@ -286,8 +288,9 @@ hr {
 
 // === team ===
 .team {
-  padding-top: 110px;
   padding-bottom: 110px;
+  padding-top: 110px;
+
   .inner {
     display: flex;
     flex-direction: column;
@@ -297,18 +300,19 @@ hr {
     align-self: flex-start;
   }
   &__title {
-    font-size: 42px;
     color: $color-black;
+    font-size: 42px;
     margin-bottom: 36px;
     text-transform: uppercase;
   }
   &__subtitle {
-    font-size: 16px;
-    line-height: 28px;
     color: $color-light-grey;
+    font-size: 16px;
     font-weight: normal;
-    width: 45%;
     margin-bottom: 70px;
+    line-height: 28px;
+    width: 45%;
+
     hr {
       margin: 30px 0 0;
     }
@@ -321,29 +325,33 @@ hr {
   }
   &-details {
     &__name {
-      font-size: 30px;
       color: $color-black;
+      font-size: 30px;
       margin-bottom: 38px;
       text-transform: uppercase;
     }
 
     &__about {
-      font-size: 16px;
-      line-height: 28px;
+      @include font-metrophobic;
+
       color: $color-light-grey;
-      width: 80%;
+      font-size: 16px;
       margin-bottom: 40px;
+      line-height: 28px;
+      width: 80%;
     }
 
     &__social {
       @include font-metrophobic;
-      width: 80%;
-      margin-bottom: 40px;
+
       font-size: 18px;
       font-style: italic;
+      margin-bottom: 40px;
+      width: 80%;
       a {
-        text-decoration: none;
         color: $color-grey;
+        text-decoration: none;
+
         & + a {
           margin-left: 30px;
         }
@@ -360,23 +368,24 @@ hr {
         }
 
         img {
-          width: 100%;
           height: 100%;
+          width: 100%;
         }
       }
       &-name {
         @include font-metrophobic;
-        font-size: 18px;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        bottom: 0px;
-        left: 0px;
+
         background: rgba(51, 51, 51, 0.6);
-        text-decoration: none;
-        padding: 10px 0;
+        bottom: 0px;
         color: $color-white;
         display: none;
+        font-size: 18px;
+        left: 0px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
       }
       &-photo:hover &-name {
         display: block;
@@ -388,23 +397,23 @@ hr {
 
 // === subscription ===
 .subscription {
-  padding-top: 110px;
-  padding-bottom: 110px;
   background: $color-pale-pink;
   color: $color-light-grey;
+  padding-top: 110px;
+  padding-bottom: 110px;
   text-align: center;
 
   &__title {
+    color: $color-grey;
     font-size: 42px;
     margin-bottom: 40px;
-    color: $color-grey;
   }
   &__subtitle {
     font-size: 18px;
-    line-height: 28px;
     font-weight: normal;
-    width: 60%;
     margin: 0 auto 70px;
+    line-height: 28px;
+    width: 60%;
   }
 
   &__form {
@@ -412,11 +421,12 @@ hr {
     justify-content: center;
 
     &-input {
-      flex-basis: 520px;
+      @include font-metrophobic;
+      background-color: $color-white;
       border: 1px solid #e5e5e5;
       border-radius: 5px;
-      background-color: $color-white;
       color: $color-black;
+      flex-basis: 520px;
       font-size: 16px;
       margin-right: 20px;
       outline: none;
@@ -426,18 +436,6 @@ hr {
         color: $color-light-grey;
       }
     }
-
-    &-button {
-      border: none;
-      border-radius: 5px;
-      background-color: $color-red;
-      color: $color-white;
-      font-size: 16px;
-      outline: none;
-      padding: 24px 58px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
   }
 }
 // === / subscription ===
@@ -445,24 +443,25 @@ hr {
 // === communication ===
 .communication {
   display: flex;
-  padding-top: 110px;
-  padding-bottom: 110px;
   flex-direction: column;
   margin-left: 100px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 
   &__title {
-    font-size: 42px;
     color: $color-black;
+    font-size: 42px;
     margin-bottom: 50px;
     text-transform: uppercase;
   }
   &__subtitle {
-    font-size: 16px;
-    line-height: 28px;
     color: $color-light-grey;
+    font-size: 16px;
     font-weight: normal;
-    width: 45%;
     margin-bottom: 74px;
+    line-height: 28px;
+    width: 45%;
+
     hr {
       margin: 50px 0 0;
     }
@@ -471,23 +470,24 @@ hr {
     display: flex;
   }
   &__form {
-    flex-basis: 60%;
+    @include font-metrophobic;
     display: flex;
+    flex-basis: 60%;
     flex-direction: column;
     padding-right: 110px;
 
     &-data {
       display: flex;
       input {
-        width: 100%;
-        background-color: #e5e5e5;
-        border: none;
+        background-color: #ffffff;
+        border: 2px solid #e5e5e5;
         border-radius: 5px;
         color: $color-black;
         font-size: 16px;
+        margin-bottom: 44px;
         outline: none;
         padding: 24px;
-        margin-bottom: 44px;
+        width: 100%;
         & + input {
           margin-left: 20px;
         }
@@ -497,58 +497,43 @@ hr {
       display: flex;
       flex-direction: column;
       textarea {
-        border: none;
+        background-color: #ffffff;
+        border: 2px solid #e5e5e5;
         border-radius: 5px;
         color: $color-black;
         font-size: 16px;
-        padding: 30px;
         height: 240px;
-        outline: none;
-        resize: none;
-        background-color: #e5e5e5;
         margin-bottom: 44px;
-      }
-
-      button {
-        @include font-metrophobic;
-
-        background: $color-red;
-        border: none;
-        border-radius: 5px;
-        color: $color-white;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 16px;
-        margin: 0;
         outline: none;
-        text-decoration: none;
-        padding: 16px 60px;
-        text-transform: uppercase;
+        padding: 30px;
+        resize: none;
       }
     }
   }
   &__contact {
-    flex-basis: 40%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     background-color: $color-grey;
     color: $color-white;
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 76px;
 
     &-title {
-      font-size: 18px;
-      text-transform: uppercase;
       color: $color-white;
+      font-size: 18px;
       margin-bottom: 36px;
+      text-transform: uppercase;
     }
     &-address,
     &-email,
     &-phone {
-      font-size: 16px;
-      line-height: 28px;
+      @include font-metrophobic;
+
       color: $color-white;
+      font-size: 16px;
       margin-bottom: 26px;
+      line-height: 28px;
     }
 
     &-address {
@@ -561,22 +546,22 @@ hr {
 // === footer ===
 .footer {
   background-color: $color-grey;
-  padding-top: 50px;
   padding-bottom: 50px;
+  padding-top: 50px;
 
   .inner {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   &__copyright {
-    font-size: 16px;
     color: $color-white;
+    font-size: 16px;
   }
   &__social {
     img {
-      width: 32px;
       height: 32px;
+      width: 32px;
 
       & + img {
         margin-left: 20px;
